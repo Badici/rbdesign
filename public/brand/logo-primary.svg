@@ -1,0 +1,8 @@
+<svg width="530" height="120" viewBox="0 0 530 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="116" height="116" rx="28" fill="#0F0C1B"/>
+  <path d="M26 22H66.5C84.4493 22 99 36.5507 99 54.5C99 72.4493 84.4493 87 66.5 87H26V22Z" fill="#8B5CF6"/>
+  <path d="M43 39H66.5C75.0604 39 82 45.9396 82 54.5C82 63.0604 75.0604 70 66.5 70H43V39Z" fill="#0F0C1B"/>
+  <path d="M45 40L78 87H61L28 40H45Z" fill="#B58AFF"/>
+  <text x="145" y="52" fill="#F4F2FF" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="2">RB DESIGN</text>
+  <text x="145" y="87" fill="#B9B2D9" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="500" letter-spacing="4">STUDIOS</text>
+</svg>

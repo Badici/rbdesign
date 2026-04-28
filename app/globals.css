@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09070f;
+  --surface: #121022;
+  --surface-soft: #1b1730;
+  --foreground: #f4f2ff;
+  --muted: #b9b2d9;
+  --accent: #8b5cf6;
+  --accent-strong: #a855f7;
+  --stroke: #2c254a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-stroke: var(--stroke);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+* {
+  border-color: var(--stroke);
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-[1280px] px-6 md:px-10;
+}
+
+.section-shell {
+  @apply py-16 md:py-24;
+}
+
+.glass-panel {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--surface) 86%, white 14%),
+    color-mix(in oklab, var(--surface-soft) 90%, black 10%)
+  );
+  box-shadow: 0 18px 55px rgba(8, 7, 18, 0.5);
+}
