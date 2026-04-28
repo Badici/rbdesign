@@ -8,13 +8,15 @@ import * as THREE from "three";
 
 const OrbModel = ({ progress = 0 }: { progress?: number }) => {
   const meshRef = useRef<THREE.Mesh>(null);
+  const elapsedRef = useRef(0);
 
-  useFrame((state) => {
+  useFrame((_, delta) => {
     if (!meshRef.current) {
       return;
     }
 
-    meshRef.current.rotation.y = state.clock.getElapsedTime() * 0.3 + progress * 1.7;
+    elapsedRef.current += delta;
+    meshRef.current.rotation.y = elapsedRef.current * 0.3 + progress * 1.7;
     meshRef.current.rotation.x = progress * 0.75;
   });
 

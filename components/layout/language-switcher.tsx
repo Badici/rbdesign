@@ -1,6 +1,4 @@
-"use client";
-
-import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import { localeLabels, locales } from "@/lib/i18n";
 
@@ -13,15 +11,12 @@ export const LanguageSwitcher = ({
   currentLocale,
   label,
 }: LanguageSwitcherProps) => {
-  const pathname = usePathname();
-  const pathWithoutLocale = pathname.replace(`/${currentLocale}`, "") || "/";
-
   return (
     <div className="inline-flex items-center gap-2" role="group" aria-label={label}>
       {locales.map((locale) => (
-        <a
+        <Link
           key={locale}
-          href={`/${locale}${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`}
+          href={`/${locale}`}
           className={`rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-all duration-500 ease-out ${
             locale === currentLocale
               ? "bg-accent text-white"
@@ -30,7 +25,7 @@ export const LanguageSwitcher = ({
           aria-current={locale === currentLocale ? "page" : undefined}
         >
           {localeLabels[locale]}
-        </a>
+        </Link>
       ))}
     </div>
   );

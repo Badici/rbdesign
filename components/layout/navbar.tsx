@@ -57,7 +57,11 @@ export const Navbar = ({ locale, dictionary }: NavbarProps) => {
         </div>
         <nav aria-label="Mobile primary" className="mt-3 flex gap-5 overflow-x-auto pb-1 text-sm md:hidden">
           {links.map((item) => (
-            <Link key={item.href} href={item.href} className="whitespace-nowrap text-muted hover:text-foreground">
+            <Link
+              key={item.href}
+              href={item.href}
+              className="whitespace-nowrap py-2 text-muted transition-colors hover:text-foreground"
+            >
               {item.label}
             </Link>
           ))}
