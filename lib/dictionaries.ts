@@ -335,11 +335,11 @@ const en: Dictionary = {
     intro:
       "These ranges are built from current Romania and wider EU market benchmarks for boutique studios. Final pricing depends on scope, timelines, and deliverables.",
     disclaimer:
-      "All prices are starting points in EUR and exclude VAT where applicable.",
+      "All prices are starting points in EUR and include VAT.",
     plans: [
       {
         service: "Strategic Website Design",
-        from: "from €1,200",
+        from: "from €800",
         description:
           "For premium presentation websites with messaging, UI system, and technical SEO-ready delivery.",
         includes: [
@@ -350,7 +350,7 @@ const en: Dictionary = {
       },
       {
         service: "Brand Identity Systems",
-        from: "from €900",
+        from: "from €600",
         description:
           "For founders and teams that need a cohesive identity across web and marketing channels.",
         includes: [
@@ -372,7 +372,7 @@ const en: Dictionary = {
       },
       {
         service: "Physical Product Branding",
-        from: "from €500",
+        from: "from €400",
         description:
           "For labels, packaging systems, and shelf-ready visual consistency across product lines.",
         includes: [
@@ -672,11 +672,11 @@ const ro: Dictionary = {
     intro:
       "Intervalele sunt aliniate la benchmark-uri actuale din România și din piața europeană pentru studiouri boutique. Prețul final depinde de complexitate, timeline și livrabile.",
     disclaimer:
-      "Toate prețurile sunt orientative, exprimate în EUR, fără TVA unde este aplicabil.",
+      "Toate prețurile sunt orientative, exprimate în EUR, cu TVA inclus.",
     plans: [
       {
         service: "Web Design Strategic",
-        from: "de la €1,200",
+        from: "de la €800",
         description:
           "Pentru website-uri de prezentare premium, cu ierarhie de mesaj, UI sistemic și fundație SEO tehnică.",
         includes: [
@@ -687,7 +687,7 @@ const ro: Dictionary = {
       },
       {
         service: "Sisteme de Identitate Vizuala",
-        from: "de la €900",
+        from: "de la €600",
         description:
           "Pentru business-uri care au nevoie de o identitate coerentă pe web, social media și materiale.",
         includes: [
@@ -709,7 +709,7 @@ const ro: Dictionary = {
       },
       {
         service: "Branding pentru Produse Fizice",
-        from: "de la €500",
+        from: "de la €400",
         description:
           "Pentru etichete, ambalaje și coerență vizuală la raft, pe game de produse.",
         includes: [
