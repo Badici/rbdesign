@@ -39,8 +39,9 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
             {dictionary.services.heading}
           </h1>
           <p className="mt-5 max-w-2xl text-muted">{dictionary.services.intro}</p>
+          <p className="mt-3 max-w-2xl text-sm text-muted">{dictionary.services.photosNote}</p>
         </Reveal>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {dictionary.services.list.map((service, index) => (
             <Reveal key={service.title} delay={index * 0.08}>
               <Card className="h-full">

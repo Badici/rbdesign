@@ -14,5 +14,5 @@ export const localeLabels: Record<Locale, string> = {
 
 export const localeNames: Record<Locale, string> = {
   en: "English",
-  ro: "Romana",
+  ro: "Română",
 };

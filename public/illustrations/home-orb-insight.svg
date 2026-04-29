@@ -1,0 +1,18 @@
+<svg width="720" height="620" viewBox="0 0 720 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="620" rx="32" fill="#120F22"/>
+  <rect x="18" y="18" width="684" height="584" rx="26" fill="#191532" stroke="#2D2550"/>
+  <circle cx="356" cy="308" r="146" fill="url(#core)"/>
+  <circle cx="356" cy="308" r="88" fill="#BCA2FF" fill-opacity="0.9"/>
+  <ellipse cx="356" cy="308" rx="232" ry="76" stroke="#7D52E8" stroke-width="2"/>
+  <ellipse cx="356" cy="308" rx="186" ry="212" transform="rotate(-24 356 308)" stroke="#6A43CC" stroke-width="2"/>
+  <ellipse cx="356" cy="308" rx="160" ry="196" transform="rotate(24 356 308)" stroke="#9C77FF" stroke-width="2"/>
+  <circle cx="530" cy="350" r="10" fill="#DCCFFF"/>
+  <circle cx="208" cy="252" r="8" fill="#C8B1FF"/>
+  <circle cx="306" cy="448" r="7" fill="#B28FFF"/>
+  <defs>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(356 308) rotate(90) scale(146)">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#372860"/>
+    </radialGradient>
+  </defs>
+</svg>

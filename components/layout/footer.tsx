@@ -22,15 +22,18 @@ export const Footer = ({ locale, dictionary }: FooterProps) => {
           </p>
         </div>
         <nav className="flex items-center gap-5 text-sm text-muted" aria-label="Footer">
+          <Link href={`/${locale}/pricing`} className="transition-colors hover:text-foreground">
+            {dictionary.nav.pricing}
+          </Link>
           <Link href={`/${locale}/portfolio`} className="transition-colors hover:text-foreground">
             {dictionary.nav.portfolio}
           </Link>
           <Link href={`/${locale}/contact`} className="transition-colors hover:text-foreground">
             {dictionary.footer.support}
           </Link>
-          <a href="#" className="transition-colors hover:text-foreground">
+          <Link href={`/${locale}/legal`} className="transition-colors hover:text-foreground">
             {dictionary.footer.legal}
-          </a>
+          </Link>
         </nav>
       </Container>
     </footer>

@@ -5,7 +5,14 @@ import { Locale } from "@/lib/i18n";
 
 const siteUrl = "https://rbdesignstudios.com";
 
-type PageKey = "home" | "services" | "portfolio" | "about" | "contact";
+type PageKey =
+  | "home"
+  | "services"
+  | "portfolio"
+  | "pricing"
+  | "about"
+  | "contact"
+  | "legal";
 
 export const createPageMetadata = (locale: Locale, page: PageKey): Metadata => {
   const dictionary = getDictionary(locale);

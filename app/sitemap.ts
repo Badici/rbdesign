@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 const base = "https://rbdesignstudios.com";
-const routes = ["", "/services", "/portfolio", "/about", "/contact"];
+const routes = ["", "/services", "/portfolio", "/pricing", "/about", "/contact", "/legal"];
 const locales = ["en", "ro"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

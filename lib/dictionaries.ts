@@ -6,6 +6,7 @@ type Dictionary = {
     home: string;
     services: string;
     portfolio: string;
+    pricing: string;
     about: string;
     contact: string;
     cta: string;
@@ -17,13 +18,18 @@ type Dictionary = {
     getProposal: string;
     viewWork: string;
     switchLanguage: string;
+    switchTheme: string;
+    themeLight: string;
+    themeDark: string;
   };
   metadata: {
     home: { title: string; description: string };
     services: { title: string; description: string };
     portfolio: { title: string; description: string };
+    pricing: { title: string; description: string };
     about: { title: string; description: string };
     contact: { title: string; description: string };
+    legal: { title: string; description: string };
   };
   home: {
     eyebrow: string;
@@ -39,6 +45,7 @@ type Dictionary = {
   services: {
     heading: string;
     intro: string;
+    photosNote: string;
     list: Array<{
       title: string;
       description: string;
@@ -60,6 +67,17 @@ type Dictionary = {
       impact: string;
     }>;
   };
+  pricing: {
+    heading: string;
+    intro: string;
+    disclaimer: string;
+    plans: Array<{
+      service: string;
+      from: string;
+      description: string;
+      includes: string[];
+    }>;
+  };
   about: {
     heading: string;
     intro: string;
@@ -77,6 +95,11 @@ type Dictionary = {
     locationValue: string;
     response: string;
   };
+  legal: {
+    heading: string;
+    intro: string;
+    items: Array<{ label: string; value: string; isLink?: boolean; href?: string }>;
+  };
   footer: {
     rights: string;
     legal: string;
@@ -90,6 +113,7 @@ const en: Dictionary = {
     home: "Home",
     services: "Services",
     portfolio: "Portfolio",
+    pricing: "Pricing",
     about: "About",
     contact: "Contact",
     cta: "Book Strategy Call",
@@ -101,6 +125,9 @@ const en: Dictionary = {
     getProposal: "Get proposal",
     viewWork: "View case studies",
     switchLanguage: "Switch language",
+    switchTheme: "Switch color theme",
+    themeLight: "Light mode",
+    themeDark: "Dark mode",
   },
   metadata: {
     home: {
@@ -118,6 +145,11 @@ const en: Dictionary = {
       description:
         "Browse selected RB Design Studios projects and discover the strategic outcomes behind each launch.",
     },
+    pricing: {
+      title: "Pricing",
+      description:
+        "Transparent starting prices for web design, brand identity, AI automations, and physical product branding.",
+    },
     about: {
       title: "About RB Design Studios",
       description:
@@ -128,6 +160,11 @@ const en: Dictionary = {
       description:
         "Tell us about your next web or branding challenge and receive a strategic proposal.",
     },
+    legal: {
+      title: "Legal",
+      description:
+        "Legal business details and contact data for RB Design Studios.",
+    },
   },
   home: {
     eyebrow: "Design systems that make companies unforgettable",
@@ -135,9 +172,9 @@ const en: Dictionary = {
     subtitle:
       "We combine strategic messaging, premium visuals, and engineering precision to launch digital experiences that convert serious buyers.",
     stats: [
-      { label: "Projects launched", value: "40+" },
-      { label: "Average engagement lift", value: "2.8x" },
-      { label: "Time to first concept", value: "5 days" },
+      { label: "Projects launched", value: "15+" },
+      { label: "Industries served", value: "4+" },
+      { label: "Time to first concept", value: "7 days" },
     ],
     valueProps: [
       {
@@ -190,6 +227,8 @@ const en: Dictionary = {
     heading: "Services built for growth-stage brands",
     intro:
       "Each engagement combines strategic thinking with polished execution, tailored to your growth stage.",
+    photosNote:
+      "If you already have product photos ready for web use, we can integrate and art-direct them directly into the final layouts.",
     list: [
       {
         title: "Strategic Website Design",
@@ -212,13 +251,23 @@ const en: Dictionary = {
         ],
       },
       {
-        title: "Landing Page CRO",
+        title: "AI-Powered Automations",
         description:
-          "Purpose-built pages for campaigns and offers where conversion speed matters.",
+          "Workflow automations that remove repetitive work and keep your pipeline moving.",
         bullets: [
-          "Offer framing and CTA architecture",
-          "Trust and proof blocks with friction reduction",
-          "A/B-ready sections and tracking alignment",
+          "Lead qualification and contact routing automations",
+          "Proposal, follow-up, and reporting workflow automation",
+          "Tool integration between forms, CRM, and communication channels",
+        ],
+      },
+      {
+        title: "Physical Product Branding",
+        description:
+          "Packaging and label systems designed to look premium both online and on shelf.",
+        bullets: [
+          "Label and packaging visual direction",
+          "Print-ready layouts and production-safe specs",
+          "Consistent product family systems for scaling catalogs",
         ],
       },
     ],
@@ -258,14 +307,14 @@ const en: Dictionary = {
       {
         name: "Emeye",
         url: "https://emeye.ro",
-        industry: "Eye care / medical services",
-        positioning: "Trust-led healthcare brand centered on clarity and reassurance.",
+        industry: "Videography / visual storytelling",
+        positioning: "Cinematic videography brand focused on premium visual identity.",
         challenge:
-          "Balance clinical credibility with an approachable, modern digital presence.",
+          "Showcase creative range while keeping the site clean and conversion-oriented.",
         solution:
-          "Designed calm visual pacing with service explainers, doctor trust markers, and clean booking cues.",
+          "Built a portfolio-first narrative structure with high-impact sections and clear inquiry flow.",
         impact:
-          "Greater trust perception and improved first-contact confidence.",
+          "Stronger premium positioning and clearer project inquiry path.",
       },
       {
         name: "Optim Contab",
@@ -278,6 +327,59 @@ const en: Dictionary = {
           "Introduced value-oriented messaging blocks, service bundles, and social proof hierarchy.",
         impact:
           "Clearer offer comprehension and a stronger premium advisory positioning.",
+      },
+    ],
+  },
+  pricing: {
+    heading: "Clear starting prices for every core service",
+    intro:
+      "These ranges are built from current Romania and wider EU market benchmarks for boutique studios. Final pricing depends on scope, timelines, and deliverables.",
+    disclaimer:
+      "All prices are starting points in EUR and exclude VAT where applicable.",
+    plans: [
+      {
+        service: "Strategic Website Design",
+        from: "from €1,200",
+        description:
+          "For premium presentation websites with messaging, UI system, and technical SEO-ready delivery.",
+        includes: [
+          "Discovery + content hierarchy",
+          "Custom responsive UI design",
+          "Development-ready component structure",
+        ],
+      },
+      {
+        service: "Brand Identity Systems",
+        from: "from €900",
+        description:
+          "For founders and teams that need a cohesive identity across web and marketing channels.",
+        includes: [
+          "Logo direction and visual language",
+          "Color and typography system",
+          "Brand usage guideline deck",
+        ],
+      },
+      {
+        service: "AI-Powered Automations",
+        from: "from €600",
+        description:
+          "For small teams replacing manual repetitive tasks with practical automation flows.",
+        includes: [
+          "Process audit and automation map",
+          "1-2 core workflow automations",
+          "Handover and optimization recommendations",
+        ],
+      },
+      {
+        service: "Physical Product Branding",
+        from: "from €500",
+        description:
+          "For labels, packaging systems, and shelf-ready visual consistency across product lines.",
+        includes: [
+          "Packaging concept direction",
+          "Print-ready label/package layouts",
+          "SKU variant structure for scale",
+        ],
       },
     ],
   },
@@ -300,12 +402,40 @@ const en: Dictionary = {
     intro:
       "Share your goals, timeline, and constraints. We will return with a focused roadmap and project estimate.",
     emailLabel: "Email",
-    emailValue: "hello@rbdesignstudios.com",
+    emailValue: "raresbadici@gmail.com",
     phoneLabel: "Phone",
-    phoneValue: "+40 742 000 000",
+    phoneValue: "+40728241412",
     locationLabel: "Location",
     locationValue: "Romania, available worldwide",
     response: "Typical response time: within one business day.",
+  },
+  legal: {
+    heading: "Legal business details",
+    intro:
+      "Official company information for contracts, invoicing, and compliance references.",
+    items: [
+      { label: "Legal name", value: "Bădici Rareș PFA" },
+      { label: "Tax ID (CIF)", value: "RO47260759" },
+      { label: "Trade Registry No.", value: "F40/6107/23.11.2022" },
+      {
+        label: "Registered address",
+        value: "Șos. Chitilei 242 E, Corp C5, Ap. 328, Parter, Faza 2",
+      },
+      { label: "Contact person", value: "Rareș Bădici" },
+      {
+        label: "Email",
+        value: "raresbadici@gmail.com",
+        isLink: true,
+        href: "mailto:raresbadici@gmail.com",
+      },
+      {
+        label: "Phone",
+        value: "0728 241 412",
+        isLink: true,
+        href: "tel:0728241412",
+      },
+      { label: "Contact hours", value: "Monday - Friday, 09:00 - 18:00" },
+    ],
   },
   footer: {
     rights: "All rights reserved.",
@@ -317,225 +447,332 @@ const en: Dictionary = {
 const ro: Dictionary = {
   siteName: "RB Design Studios",
   nav: {
-    home: "Acasa",
+    home: "Acasă",
     services: "Servicii",
     portfolio: "Portofoliu",
+    pricing: "Prețuri",
     about: "Despre",
     contact: "Contact",
-    cta: "Programeaza un apel",
+    cta: "Programează un apel",
   },
   common: {
-    discover: "Descopera mai mult",
-    bookCall: "Programeaza apel",
-    startProject: "Incepe proiectul",
-    getProposal: "Cere oferta",
+    discover: "Descoperă mai mult",
+    bookCall: "Programează apel",
+    startProject: "Începe proiectul",
+    getProposal: "Cere ofertă",
     viewWork: "Vezi studiile de caz",
-    switchLanguage: "Schimba limba",
+    switchLanguage: "Schimbă limba",
+    switchTheme: "Schimbă tema",
+    themeLight: "Mod luminos",
+    themeDark: "Mod întunecat",
   },
   metadata: {
     home: {
-      title: "Web Design si Branding Premium",
+      title: "Web Design și Branding Premium",
       description:
-        "RB Design Studios creeaza website-uri orientate spre conversii si sisteme de brand pentru companii ambitioase.",
+        "RB Design Studios creează website-uri orientate spre conversii și sisteme de brand pentru companii ambițioase.",
     },
     services: {
       title: "Servicii de Design",
       description:
-        "Descopera serviciile noastre premium de web design si branding pentru business-uri in crestere.",
+        "Descoperă serviciile noastre premium de web design și branding pentru business-uri în creștere.",
     },
     portfolio: {
-      title: "Portofoliu si Studii de Caz",
+      title: "Portofoliu și Studii de Caz",
       description:
-        "Exploreaza proiectele RB Design Studios si rezultatele strategice din spatele fiecarui launch.",
+        "Explorează proiectele RB Design Studios și rezultatele strategice din spatele fiecărui launch.",
+    },
+    pricing: {
+      title: "Prețuri",
+      description:
+        "Prețuri de pornire pentru web design, identitate de brand, automatizări AI și branding de produs fizic.",
     },
     about: {
       title: "Despre RB Design Studios",
       description:
-        "Cunoaste abordarea, procesul si standardele RB Design Studios.",
+        "Cunoaște abordarea, procesul și standardele RB Design Studios.",
     },
     contact: {
       title: "Contact",
       description:
-        "Povesteste-ne despre urmatoarea provocare de web sau branding si primesti o propunere strategica.",
+        "Povestește-ne despre următoarea provocare de web sau branding și primești o propunere strategică.",
+    },
+    legal: {
+      title: "Date Legale",
+      description:
+        "Datele legale și de contact pentru activitatea RB Design Studios.",
     },
   },
   home: {
     eyebrow: "Sisteme de design care fac brandurile memorabile",
-    title: "Web design si branding create sa-ti vanda valoarea in cateva secunde.",
+    title: "Web design și branding create să-ți vândă valoarea în câteva secunde.",
     subtitle:
-      "Combinam strategie, vizual premium si executie tehnica pentru experiente digitale care convertesc clienti relevanti.",
+      "Combinăm strategie, vizual premium și execuție tehnică pentru experiențe digitale care convertesc clienți relevanți.",
     stats: [
-      { label: "Proiecte lansate", value: "40+" },
-      { label: "Crestere medie engagement", value: "2.8x" },
-      { label: "Timp pana la primul concept", value: "5 zile" },
+      { label: "Proiecte lansate", value: "15+" },
+      { label: "Industrii deservite", value: "4+" },
+      { label: "Timp până la primul concept", value: "7 zile" },
     ],
     valueProps: [
       {
-        title: "Estetica orientata spre conversie",
+        title: "Estetică orientată spre conversie",
         description:
-          "Fiecare decizie vizuala sustine un obiectiv de business: incredere, claritate si actiune.",
+          "Fiecare decizie vizuală susține un obiectiv de business: încredere, claritate și acțiune.",
       },
       {
-        title: "Coerenta de brand la scara",
+        title: "Coerență de brand la scară",
         description:
-          "De la logo la ritmul paginii, brandul tau ramane consecvent in orice punct de contact.",
+          "De la logo la ritmul paginii, brandul tău rămâne consecvent în orice punct de contact.",
       },
       {
-        title: "Livrare premium rapida",
+        title: "Livrare premium rapidă",
         description:
-          "Un flux eficient care aduce rezultate high-end fara bucle infinite de feedback.",
+          "Un flux eficient care aduce rezultate high-end fără bucle infinite de feedback.",
       },
     ],
     process: [
       {
         step: "01",
-        title: "Sprint de Pozitionare",
+        title: "Sprint de Poziționare",
         description:
-          "Aliniem obiectivele, publicul si oferta inainte de orice decizie vizuala.",
+          "Aliniem obiectivele, publicul și oferta înainte de orice decizie vizuală.",
       },
       {
         step: "02",
-        title: "Directie Vizuala + UX",
+        title: "Direcție Vizuală + UX",
         description:
-          "Definim arhitectura, limbajul vizual si fluxul de interactiune care conduce spre actiune.",
+          "Definim arhitectura, limbajul vizual și fluxul de interacțiune care conduce spre acțiune.",
       },
       {
         step: "03",
         title: "Build + Lansare",
         description:
-          "Livram experienta gata de productie, optimizata pentru performanta si SEO.",
+          "Livrăm experiența gata de producție, optimizată pentru performanță și SEO.",
       },
     ],
     testimonial: {
       quote:
-        "RB Design Studios ne-a transformat site-ul din informativ in persuasiv. Calitatea executiei a schimbat imediat discutia cu clientii.",
+        "RB Design Studios ne-a transformat site-ul din informativ în persuasiv. Calitatea execuției a schimbat imediat discuția cu clienții.",
       author: "Operations Lead, Optim Contab",
       role: "Servicii Contabilitate",
     },
-    ctaTitle: "Pregatit sa ridici perceptia brandului tau?",
+    ctaTitle: "Pregătit să ridici percepția brandului tău?",
     ctaText:
-      "Programeaza un apel strategic si primesti o directie clara pentru web design, branding si lansare.",
+      "Programează un apel strategic și primești o direcție clară pentru web design, branding și lansare.",
   },
   services: {
-    heading: "Servicii construite pentru branduri in crestere",
+    heading: "Servicii construite pentru branduri în creștere",
     intro:
-      "Fiecare colaborare combina strategie cu executie impecabila, in functie de etapa business-ului tau.",
+      "Fiecare colaborare combină strategie cu execuție impecabilă, în funcție de etapa business-ului tău.",
+    photosNote:
+      "Dacă ai deja fotografii de produs pregătite pentru web, le integrăm direct în layout-ul final cu direcție vizuală coerentă.",
     list: [
       {
         title: "Web Design Strategic",
         description:
-          "Website-uri orientate pe conversie, cu ierarhie clara si experienta premium.",
+          "Website-uri orientate pe conversie, cu ierarhie clară și experiență premium.",
         bullets: [
-          "Arhitectura informatiei si ierarhie de mesaj",
-          "Sistem UI responsive si token-uri scalabile",
-          "Fundatie tehnica SEO si optimizare de lansare",
+          "Arhitectura informației și ierarhie de mesaj",
+          "Sistem UI responsive și token-uri scalabile",
+          "Fundație tehnică SEO și optimizare de lansare",
         ],
       },
       {
-        title: "Sisteme de Identitate Vizuala",
+        title: "Sisteme de Identitate Vizuală",
         description:
-          "Identitati distincte care functioneaza impecabil pe web, social media si materiale.",
+          "Identități distincte care funcționează impecabil pe web, social media și materiale.",
         bullets: [
-          "Sisteme de logo si directie tipografica",
+          "Sisteme de logo și direcție tipografică",
           "Strategie de culoare si asset-uri modulare",
-          "Ghid de implementare consecventa",
+          "Ghid de implementare consecventă",
         ],
       },
       {
-        title: "Landing Page CRO",
+        title: "Automatizări cu AI",
         description:
-          "Pagini construite pentru campanii unde viteza conversiei conteaza direct.",
+          "Fluxuri automate care elimină task-urile repetitive și susțin creșterea operațională.",
         bullets: [
-          "Structura de oferta si arhitectura CTA",
-          "Blocuri de incredere si reducere a frictiunii",
-          "Sectiuni gata pentru A/B testing si tracking",
+          "Automatizări pentru calificare lead-uri și routing",
+          "Fluxuri automate pentru propuneri, follow-up si raportare",
+          "Integrare între formulare, CRM și canale de comunicare",
+        ],
+      },
+      {
+        title: "Branding pentru Produse Fizice",
+        description:
+          "Sisteme vizuale pentru etichete și packaging care arată premium online și offline.",
+        bullets: [
+          "Direcție creativă pentru etichetă și ambalaj",
+          "Layout-uri pregătite pentru producție tipar",
+          "Sistem de familie pentru game de produse",
         ],
       },
     ],
     workflowTitle: "Proces practic, output premium",
     workflowText:
-      "Mentinem ritmul prin cicluri scurte, checkpoint-uri clare si decizii argumentate.",
+      "Menținem ritmul prin cicluri scurte, checkpoint-uri clare și decizii argumentate.",
   },
   portfolio: {
     heading: "Rezultate selectate din proiecte reale",
     intro:
-      "Un mix de proiecte unde pozitionarea, UX-ul si directia vizuala au sustinut obiective clare de business.",
+      "Un mix de proiecte unde poziționarea, UX-ul și direcția vizuală au susținut obiective clare de business.",
     cases: [
       {
         name: "Lyra Baits",
         url: "https://lyrabaits.ro",
         industry: "Produse pescuit / eCommerce",
-        positioning: "Brand premium de nade, cu focus pe performanta produsului.",
+        positioning: "Brand premium de nade, cu focus pe performanța produsului.",
         challenge:
-          "Transformarea avantajelor tehnice ale produsului intr-o experienta de shopping mai aspirationala.",
+          "Transformarea avantajelor tehnice ale produsului într-o experiență de shopping mai aspirațională.",
         solution:
-          "Am construit un sistem modular de prezentare, cu ierarhie mai clara si scanare rapida.",
+          "Am construit un sistem modular de prezentare, cu ierarhie mai clară și scanare rapidă.",
         impact:
-          "Claritate mai mare in oferta si incredere sporita pentru clienti noi.",
+          "Claritate mai mare în ofertă și încredere sporită pentru clienți noi.",
       },
       {
-        name: "Plumbi si Momitoare",
+        name: "Plumbi și Momitoare",
         url: "https://plumbisimomitoare.ro",
         industry: "Retail echipamente pescuit",
-        positioning: "Catalog extins, focus pe achizitie rapida si practica.",
+        positioning: "Catalog extins, focus pe achiziție rapidă și practică.",
         challenge:
-          "Organizarea unui volum mare de produse intr-un flux mobil usor de folosit.",
+          "Organizarea unui volum mare de produse într-un flux mobil ușor de folosit.",
         solution:
-          "Am simplificat traseele pe categorii si am scos in evidenta metadatele esentiale.",
+          "Am simplificat traseele pe categorii și am scos în evidență metadatele esențiale.",
         impact:
-          "Navigare mai eficienta si frictiune redusa in decizia de cumparare.",
+          "Navigare mai eficientă și fricțiune redusă în decizia de cumpărare.",
       },
       {
         name: "Emeye",
         url: "https://emeye.ro",
-        industry: "Servicii medicale oftalmologie",
-        positioning: "Brand medical bazat pe incredere si claritate.",
+        industry: "Videografie / storytelling vizual",
+        positioning: "Brand de videografie cinematic, orientat spre percepție premium.",
         challenge:
-          "Echilibrarea credibilitatii clinice cu o prezenta digitala moderna si accesibila.",
+          "Prezentarea portofoliului creativ într-un format clar, fără să încarce experiența.",
         solution:
-          "Am definit un ritm vizual calm, explicatii de servicii si indicii clare pentru programare.",
+          "Am construit o structură portfolio-first, cu secțiuni de impact și traseu clar spre contact.",
         impact:
-          "Perceptie de incredere crescuta si mai multa siguranta la primul contact.",
+          "Poziționare premium mai clară și mai multe intenții de contact relevante.",
       },
       {
         name: "Optim Contab",
         url: "https://optimcontab.ro",
-        industry: "Contabilitate si consultanta",
-        positioning: "Partener financiar de incredere pentru IMM-uri in crestere.",
+        industry: "Contabilitate și consultanță",
+        positioning: "Partener financiar de încredere pentru IMM-uri în creștere.",
         challenge:
-          "Diferentiere fata de site-urile contabile standard si comunicare rapida a valorii.",
+          "Diferențiere față de site-urile contabile standard și comunicare rapidă a valorii.",
         solution:
-          "Am introdus blocuri de valoare, pachete de servicii si ierarhie de social proof.",
+          "Am introdus blocuri de valoare, pachete de servicii și ierarhie de social proof.",
         impact:
-          "Intelegere mai rapida a ofertei si pozitionare premium mai clara.",
+          "Înțelegere mai rapidă a ofertei și poziționare premium mai clară.",
+      },
+    ],
+  },
+  pricing: {
+    heading: "Prețuri clare de pornire pentru fiecare serviciu",
+    intro:
+      "Intervalele sunt aliniate la benchmark-uri actuale din România și din piața europeană pentru studiouri boutique. Prețul final depinde de complexitate, timeline și livrabile.",
+    disclaimer:
+      "Toate prețurile sunt orientative, exprimate în EUR, fără TVA unde este aplicabil.",
+    plans: [
+      {
+        service: "Web Design Strategic",
+        from: "de la €1,200",
+        description:
+          "Pentru website-uri de prezentare premium, cu ierarhie de mesaj, UI sistemic și fundație SEO tehnică.",
+        includes: [
+          "Discovery + arhitectură conținut",
+          "Design custom responsive",
+          "Structură de componente pregătită pentru dezvoltare",
+        ],
+      },
+      {
+        service: "Sisteme de Identitate Vizuala",
+        from: "de la €900",
+        description:
+          "Pentru business-uri care au nevoie de o identitate coerentă pe web, social media și materiale.",
+        includes: [
+          "Direcție logo și limbaj vizual",
+          "Sistem de culoare și tipografie",
+          "Ghid de utilizare brand",
+        ],
+      },
+      {
+        service: "Automatizări cu AI",
+        from: "de la €600",
+        description:
+          "Pentru echipe mici care vor să înlocuiască munca manuală repetitivă cu fluxuri automate.",
+        includes: [
+          "Audit de proces și mapă de automatizare",
+          "1-2 fluxuri automate implementate",
+          "Handover + recomandări de optimizare",
+        ],
+      },
+      {
+        service: "Branding pentru Produse Fizice",
+        from: "de la €500",
+        description:
+          "Pentru etichete, ambalaje și coerență vizuală la raft, pe game de produse.",
+        includes: [
+          "Concept vizual de packaging",
+          "Layout-uri print-ready",
+          "Sistem pentru variații de SKU",
+        ],
       },
     ],
   },
   about: {
-    heading: "Proiectam incredere digitala din prima secunda",
+    heading: "Proiectăm încredere digitală din prima secundă",
     intro:
-      "RB Design Studios este o echipa boutique care combina gandirea de produs cu implementare frontend de nivel productie.",
+      "RB Design Studios este o echipă boutique care combină gândirea de produs cu implementare frontend de nivel producție.",
     body: [
-      "Lucram la intersectia dintre branding, psihologia utilizatorului si precizie tehnica. Nu livram pagini decorative, ci sisteme pregatite pentru business.",
-      "De la strategie la lansare, fiecare etapa ramane intentionata, transparenta si masurabila.",
+      "Lucrăm la intersecția dintre branding, psihologia utilizatorului și precizie tehnică. Nu livrăm pagini decorative, ci sisteme pregătite pentru business.",
+      "De la strategie la lansare, fiecare etapă rămâne intenționată, transparentă și măsurabilă.",
     ],
     principles: [
-      { title: "Claritate inainte de decor", text: "Ierarhia mesajului conduce fiecare decizie de layout." },
-      { title: "Detaliul inspira incredere", text: "Alinierea, ritmul de spatiere si motion quality nu sunt niciodata intamplatoare." },
-      { title: "Performanta implicit", text: "Vizualul premium trebuie sa se simta rapid pe dispozitive reale." },
+      { title: "Claritate înainte de decor", text: "Ierarhia mesajului conduce fiecare decizie de layout." },
+      { title: "Detaliul inspiră încredere", text: "Alinierea, ritmul de spațiere și motion quality nu sunt niciodată întâmplătoare." },
+      { title: "Performanță implicită", text: "Vizualul premium trebuie să se simtă rapid pe dispozitive reale." },
     ],
   },
   contact: {
-    heading: "Hai sa schitam urmatoarea lansare",
+    heading: "Hai să schițăm următoarea lansare",
     intro:
-      "Spune-ne obiectivele, termenul si contextul proiectului. Revenim cu un roadmap clar si o estimare.",
+      "Spune-ne obiectivele, termenul și contextul proiectului. Revenim cu un roadmap clar și o estimare.",
     emailLabel: "Email",
-    emailValue: "hello@rbdesignstudios.com",
+    emailValue: "raresbadici@gmail.com",
     phoneLabel: "Telefon",
-    phoneValue: "+40 742 000 000",
-    locationLabel: "Locatie",
-    locationValue: "Romania, disponibil international",
-    response: "Timp mediu de raspuns: in 24h lucratoare.",
+    phoneValue: "+40728241412",
+    locationLabel: "Locație",
+    locationValue: "România, disponibil internațional",
+    response: "Timp mediu de răspuns: în 24h lucrătoare.",
+  },
+  legal: {
+    heading: "Date legale companie",
+    intro:
+      "Informațiile oficiale ale activității pentru contracte, facturare și conformitate.",
+    items: [
+      { label: "Denumire legală", value: "Bădici Rareș PFA" },
+      { label: "CIF", value: "RO47260759" },
+      { label: "Nr. înregistrare Registrul Comerțului", value: "F40/6107/23.11.2022" },
+      {
+        label: "Sediu profesional",
+        value: "Șos. Chitilei 242 E, Corp C5, Ap. 328, Parter, Faza 2",
+      },
+      { label: "Persoană de contact", value: "Rareș Bădici" },
+      {
+        label: "Email",
+        value: "raresbadici@gmail.com",
+        isLink: true,
+        href: "mailto:raresbadici@gmail.com",
+      },
+      {
+        label: "Telefon",
+        value: "0728 241 412",
+        isLink: true,
+        href: "tel:0728241412",
+      },
+      { label: "Program de contact", value: "Luni - Vineri, 09:00 - 18:00" },
+    ],
   },
   footer: {
     rights: "Toate drepturile rezervate.",

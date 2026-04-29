@@ -11,6 +11,17 @@
   --stroke: #2c254a;
 }
 
+[data-theme="light"] {
+  --background: #f1edf8;
+  --surface: #e6def5;
+  --surface-soft: #ddd2f1;
+  --foreground: #20173a;
+  --muted: #5e547f;
+  --accent: #6c3be7;
+  --accent-strong: #5a2cd6;
+  --stroke: #cabee7;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
@@ -27,6 +38,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+[data-theme="dark"] body {
+  color-scheme: dark;
+}
+
+[data-theme="light"] body {
+  color-scheme: light;
 }
 
 * {
@@ -60,5 +79,45 @@ select {
     color-mix(in oklab, var(--surface) 86%, white 14%),
     color-mix(in oklab, var(--surface-soft) 90%, black 10%)
   );
-  box-shadow: 0 18px 55px rgba(8, 7, 18, 0.5);
+  box-shadow: 0 18px 55px color-mix(in oklab, var(--foreground) 20%, transparent);
+}
+
+[data-theme="light"] .glass-panel {
+  background: linear-gradient(
+    140deg,
+    color-mix(in oklab, var(--surface) 88%, white 12%),
+    color-mix(in oklab, var(--surface-soft) 94%, var(--accent) 6%)
+  );
+  box-shadow: 0 14px 36px rgba(78, 47, 148, 0.14);
+}
+
+.card-shell {
+  color: var(--foreground);
+}
+
+.hero-backdrop {
+  background-image:
+    url("/illustrations/hero-grid.svg"),
+    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.22), transparent 45%),
+    radial-gradient(circle at 82% 10%, rgba(127, 86, 217, 0.2), transparent 42%);
+  background-size: cover, auto, auto;
+}
+
+[data-theme="light"] .hero-backdrop {
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(108, 59, 231, 0.16), transparent 46%),
+    radial-gradient(circle at 87% 8%, rgba(139, 92, 246, 0.14), transparent 44%),
+    linear-gradient(180deg, rgba(237, 230, 251, 0.85), rgba(227, 217, 247, 0.7));
+}
+
+.hero-visual-shell {
+  background:
+    radial-gradient(circle at 52% 30%, rgba(139, 92, 246, 0.22), rgba(9, 7, 15, 0.88) 72%),
+    linear-gradient(130deg, rgba(168, 85, 247, 0.16), transparent 56%);
+}
+
+[data-theme="light"] .hero-visual-shell {
+  background:
+    radial-gradient(circle at 50% 28%, rgba(108, 59, 231, 0.22), rgba(225, 214, 247, 0.9) 74%),
+    linear-gradient(130deg, rgba(255, 255, 255, 0.35), rgba(205, 188, 240, 0.24));
 }

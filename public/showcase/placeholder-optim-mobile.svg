@@ -1,0 +1,10 @@
+<svg width="430" height="932" viewBox="0 0 430 932" xmlns="http://www.w3.org/2000/svg">
+  <rect width="430" height="932" rx="40" fill="#121022"/>
+  <rect x="22" y="22" width="386" height="888" rx="36" fill="#18152B" stroke="#2C254A"/>
+  <rect x="48" y="70" width="220" height="18" rx="9" fill="#8B5CF6"/>
+  <rect x="48" y="112" width="334" height="220" rx="16" fill="#231E3C"/>
+  <rect x="48" y="356" width="334" height="162" rx="16" fill="#1B1730"/>
+  <rect x="48" y="540" width="334" height="162" rx="16" fill="#1B1730"/>
+  <rect x="48" y="724" width="334" height="162" rx="16" fill="#1B1730"/>
+  <text x="48" y="46" fill="#B9B2D9" font-size="14" font-family="Inter, Arial, sans-serif">Placeholder - Optim Contab Mobile</text>
+</svg>

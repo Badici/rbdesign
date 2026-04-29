@@ -68,14 +68,15 @@ export const HeroVisual = () => {
 
   if (reduceMotion) {
     return (
-      <div className="relative h-[460px] w-full overflow-hidden rounded-3xl border border-stroke/60 bg-[radial-gradient(circle_at_50%_35%,rgba(139,92,246,0.45),rgba(9,7,15,0.9)_65%)]">
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(168,85,247,0.2),transparent_55%)]" />
-      </div>
+      <div className="hero-visual-shell relative h-[460px] w-full overflow-hidden rounded-3xl border border-stroke/60" />
     );
   }
 
   return (
-    <motion.div style={{ y, opacity }} className="h-[460px] w-full overflow-hidden rounded-3xl border border-stroke/60">
+    <motion.div
+      style={{ y, opacity }}
+      className="hero-visual-shell h-[460px] w-full overflow-hidden rounded-3xl border border-stroke/60"
+    >
       <Scene progress={progress} />
     </motion.div>
   );
