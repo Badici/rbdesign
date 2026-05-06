@@ -68,14 +68,19 @@ export const Navbar = ({ locale, dictionary }: NavbarProps) => {
               </Link>
             ))}
           </nav>
-          <div className="flex flex-1 items-center justify-end gap-2 sm:gap-3 md:flex-none">
-            <ThemeToggle
-              label={dictionary.common.switchTheme}
-              lightLabel={dictionary.common.themeLight}
-              darkLabel={dictionary.common.themeDark}
-            />
-            <LanguageSwitcher currentLocale={locale} label={dictionary.common.switchLanguage} />
-            <ButtonLink href={`/${locale}/contact`} className="hidden md:inline-flex">
+          <div className="flex min-w-0 flex-1 items-center justify-end gap-2 md:gap-3">
+            <div className="hidden items-center gap-2 md:flex md:gap-3">
+              <ThemeToggle
+                label={dictionary.common.switchTheme}
+                lightLabel={dictionary.common.themeLight}
+                darkLabel={dictionary.common.themeDark}
+              />
+              <LanguageSwitcher currentLocale={locale} label={dictionary.common.switchLanguage} />
+            </div>
+            <ButtonLink
+              href={`/${locale}/contact`}
+              className="inline-flex shrink-0 px-3 py-2.5 text-xs font-semibold md:px-5 md:py-3 md:text-sm"
+            >
               {dictionary.nav.cta}
             </ButtonLink>
             <MobileNav locale={locale} dictionary={dictionary} links={links} isActive={isActive} />

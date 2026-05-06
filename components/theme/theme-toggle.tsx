@@ -11,6 +11,8 @@ type ThemeToggleProps = {
   label: string;
   lightLabel: string;
   darkLabel: string;
+  /** Merged onto the root button (e.g. drawer / dark surfaces) */
+  surfaceClassName?: string;
 };
 
 const getDomTheme = (): Theme =>
@@ -49,7 +51,12 @@ const MoonGlyph = ({ className }: { className?: string }) => (
   </svg>
 );
 
-export const ThemeToggle = ({ label, lightLabel, darkLabel }: ThemeToggleProps) => {
+export const ThemeToggle = ({
+  label,
+  lightLabel,
+  darkLabel,
+  surfaceClassName = "",
+}: ThemeToggleProps) => {
   const theme = useSyncExternalStore(subscribeTheme, getDomTheme, () => "dark" as Theme);
 
   const toggleTheme = useCallback(() => {
@@ -68,7 +75,7 @@ export const ThemeToggle = ({ label, lightLabel, darkLabel }: ThemeToggleProps) 
       onClick={toggleTheme}
       aria-label={`${label}: ${nextLabel}`}
       aria-pressed={!isDark}
-      className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-stroke bg-surface transition-colors hover:bg-surface-soft"
+      className={`relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-stroke bg-surface transition-colors hover:bg-surface-soft ${surfaceClassName}`.trim()}
     >
       <span className="sr-only">{nextLabel}</span>
       {mounted ? (

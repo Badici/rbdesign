@@ -9,9 +9,11 @@ import { localeLabels, locales, type Locale } from "@/lib/i18n";
 type LanguageSwitcherProps = {
   currentLocale: Locale;
   label: string;
+  /** Readable on dark drawer / glass panels */
+  highContrast?: boolean;
 };
 
-export const LanguageSwitcher = ({ currentLocale, label }: LanguageSwitcherProps) => {
+export const LanguageSwitcher = ({ currentLocale, label, highContrast }: LanguageSwitcherProps) => {
   const pathname = usePathname();
   const router = useRouter();
   const pathWithoutLocale = pathname.startsWith(`/${currentLocale}`)
@@ -41,13 +43,20 @@ export const LanguageSwitcher = ({ currentLocale, label }: LanguageSwitcherProps
     router.push(targetHref);
   };
 
+  const trackClass = highContrast
+    ? "border-white/18 bg-white/[0.1] shadow-[inset_0_1px_0_rgb(255_255_255_/_0.06)]"
+    : "border-stroke bg-surface/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]";
+
+  const inactiveLabelClass = highContrast ? "text-zinc-400" : "text-muted/70";
+  const activeLabelClass = "text-white/95";
+
   return (
     <div className="relative" role="group" aria-label={label}>
       <motion.button
         type="button"
         onClick={handleToggle}
         aria-label={`${label}: ${localeLabels[otherLocale]}`}
-        className="relative h-11 w-[5.75rem] overflow-hidden rounded-full border border-stroke bg-surface/90 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm"
+        className={`relative h-11 w-[5.75rem] overflow-hidden rounded-full border p-1 backdrop-blur-sm ${trackClass}`}
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.95 }}
         transition={{ type: "spring", stiffness: 500, damping: 28 }}
@@ -84,7 +93,7 @@ export const LanguageSwitcher = ({ currentLocale, label }: LanguageSwitcherProps
           {locales.map((loc) => (
             <span
               key={loc}
-              className={loc === currentLocale ? "text-white/95" : "text-muted/70"}
+              className={loc === currentLocale ? activeLabelClass : inactiveLabelClass}
             >
               {localeLabels[loc]}
             </span>
