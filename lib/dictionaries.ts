@@ -17,6 +17,10 @@ type Dictionary = {
     startProject: string;
     getProposal: string;
     viewWork: string;
+    viewCaseStudy: string;
+    visitLiveSite: string;
+    menuOpen: string;
+    menuClose: string;
     switchLanguage: string;
     switchTheme: string;
     themeLight: string;
@@ -57,7 +61,10 @@ type Dictionary = {
   portfolio: {
     heading: string;
     intro: string;
+    backToPortfolio: string;
+    deliverablesHeading: string;
     cases: Array<{
+      slug: string;
       name: string;
       url: string;
       industry: string;
@@ -124,6 +131,10 @@ const en: Dictionary = {
     startProject: "Start your project",
     getProposal: "Get proposal",
     viewWork: "View case studies",
+    viewCaseStudy: "View case study",
+    visitLiveSite: "Visit live site",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
     switchLanguage: "Switch language",
     switchTheme: "Switch color theme",
     themeLight: "Light mode",
@@ -279,8 +290,11 @@ const en: Dictionary = {
     heading: "Selected outcomes from real client launches",
     intro:
       "A curated selection of projects where positioning, UX, and visual direction aligned to business goals.",
+    backToPortfolio: "Back to portfolio",
+    deliverablesHeading: "What we shipped",
     cases: [
       {
+        slug: "lyra-baits",
         name: "Lyra Baits",
         url: "https://lyrabaits.ro",
         industry: "Fishing products / eCommerce",
@@ -293,6 +307,7 @@ const en: Dictionary = {
           "Sharper product clarity and stronger confidence signals for new buyers.",
       },
       {
+        slug: "plumbi-si-momitoare",
         name: "Plumbi si Momitoare",
         url: "https://plumbisimomitoare.ro",
         industry: "Fishing gear retailer",
@@ -305,6 +320,7 @@ const en: Dictionary = {
           "Improved browse efficiency and lower decision friction on smaller screens.",
       },
       {
+        slug: "emeye",
         name: "Emeye",
         url: "https://emeye.ro",
         industry: "Videography / visual storytelling",
@@ -317,6 +333,7 @@ const en: Dictionary = {
           "Stronger premium positioning and clearer project inquiry path.",
       },
       {
+        slug: "optim-contab",
         name: "Optim Contab",
         url: "https://optimcontab.ro",
         industry: "Accounting and business advisory",
@@ -461,6 +478,10 @@ const ro: Dictionary = {
     startProject: "Începe proiectul",
     getProposal: "Cere ofertă",
     viewWork: "Vezi studiile de caz",
+    viewCaseStudy: "Vezi studiul de caz",
+    visitLiveSite: "Vizitează site-ul live",
+    menuOpen: "Deschide meniul",
+    menuClose: "Închide meniul",
     switchLanguage: "Schimbă limba",
     switchTheme: "Schimbă tema",
     themeLight: "Mod luminos",
@@ -616,8 +637,11 @@ const ro: Dictionary = {
     heading: "Rezultate selectate din proiecte reale",
     intro:
       "Un mix de proiecte unde poziționarea, UX-ul și direcția vizuală au susținut obiective clare de business.",
+    backToPortfolio: "Înapoi la portofoliu",
+    deliverablesHeading: "Ce am livrat",
     cases: [
       {
+        slug: "lyra-baits",
         name: "Lyra Baits",
         url: "https://lyrabaits.ro",
         industry: "Produse pescuit / eCommerce",
@@ -630,6 +654,7 @@ const ro: Dictionary = {
           "Claritate mai mare în ofertă și încredere sporită pentru clienți noi.",
       },
       {
+        slug: "plumbi-si-momitoare",
         name: "Plumbi și Momitoare",
         url: "https://plumbisimomitoare.ro",
         industry: "Retail echipamente pescuit",
@@ -642,6 +667,7 @@ const ro: Dictionary = {
           "Navigare mai eficientă și fricțiune redusă în decizia de cumpărare.",
       },
       {
+        slug: "emeye",
         name: "Emeye",
         url: "https://emeye.ro",
         industry: "Videografie / storytelling vizual",
@@ -654,6 +680,7 @@ const ro: Dictionary = {
           "Poziționare premium mai clară și mai multe intenții de contact relevante.",
       },
       {
+        slug: "optim-contab",
         name: "Optim Contab",
         url: "https://optimcontab.ro",
         industry: "Contabilitate și consultanță",

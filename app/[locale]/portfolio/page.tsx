@@ -6,31 +6,14 @@ import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Card } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
+import type { PortfolioSlug } from "@/lib/case-studies";
 import { getDictionary } from "@/lib/dictionaries";
 import { isLocale, Locale } from "@/lib/i18n";
+import { showcaseAssets } from "@/lib/portfolio-assets";
 import { createPageMetadata } from "@/lib/seo";
 
 type PortfolioPageProps = {
   params: Promise<{ locale: string }>;
-};
-
-const showcaseAssetsByUrl: Record<string, { desktop: string; mobile: string }> = {
-  "https://lyrabaits.ro": {
-    desktop: "/showcase/placeholder-lyra-desktop.svg",
-    mobile: "/showcase/placeholder-lyra-mobile.svg",
-  },
-  "https://plumbisimomitoare.ro": {
-    desktop: "/showcase/placeholder-plumbi-desktop.svg",
-    mobile: "/showcase/placeholder-plumbi-mobile.svg",
-  },
-  "https://emeye.ro": {
-    desktop: "/showcase/placeholder-emeye-desktop.svg",
-    mobile: "/showcase/placeholder-emeye-mobile.svg",
-  },
-  "https://optimcontab.ro": {
-    desktop: "/showcase/placeholder-optim-desktop.svg",
-    mobile: "/showcase/placeholder-optim-mobile.svg",
-  },
 };
 
 export async function generateMetadata({
@@ -79,7 +62,7 @@ export default async function PortfolioPage({ params }: PortfolioPageProps) {
 
       <div className="mt-12 grid gap-8">
         {dictionary.portfolio.cases.map((item, index) => {
-          const assets = showcaseAssetsByUrl[item.url];
+          const assets = showcaseAssets[item.slug as PortfolioSlug];
 
           return (
             <Reveal key={item.name} delay={index * 0.08}>
@@ -113,8 +96,18 @@ export default async function PortfolioPage({ params }: PortfolioPageProps) {
                   <p className="mt-3 text-sm text-muted">
                     <strong className="text-foreground">{labels.outcome}</strong> {item.impact}
                   </p>
-                  <div className="mt-6">
-                    <ButtonLink href={item.url}>{dictionary.common.discover}</ButtonLink>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <ButtonLink href={`/${locale}/portfolio/${item.slug}`}>
+                      {dictionary.common.viewCaseStudy}
+                    </ButtonLink>
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-xl border border-stroke px-5 py-3 text-sm font-semibold text-foreground transition-all duration-500 ease-out hover:border-accent hover:bg-surface-soft hover:scale-[1.03]"
+                    >
+                      {dictionary.common.visitLiveSite}
+                    </a>
                   </div>
                 </article>
               </Card>

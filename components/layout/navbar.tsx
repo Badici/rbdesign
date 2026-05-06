@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 import { Container } from "@/components/layout/container";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Dictionary } from "@/lib/dictionaries";
@@ -67,38 +68,19 @@ export const Navbar = ({ locale, dictionary }: NavbarProps) => {
               </Link>
             ))}
           </nav>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-1 items-center justify-end gap-2 sm:gap-3 md:flex-none">
             <ThemeToggle
               label={dictionary.common.switchTheme}
               lightLabel={dictionary.common.themeLight}
               darkLabel={dictionary.common.themeDark}
             />
-            <LanguageSwitcher
-              currentLocale={locale}
-              label={dictionary.common.switchLanguage}
-              currentPath={pathname}
-            />
-            <ButtonLink href={`/${locale}/contact`} className="hidden sm:inline-flex">
+            <LanguageSwitcher currentLocale={locale} label={dictionary.common.switchLanguage} />
+            <ButtonLink href={`/${locale}/contact`} className="hidden md:inline-flex">
               {dictionary.nav.cta}
             </ButtonLink>
+            <MobileNav locale={locale} dictionary={dictionary} links={links} isActive={isActive} />
           </div>
         </div>
-        <nav aria-label="Mobile primary" className="mt-3 flex gap-5 overflow-x-auto pb-1 text-sm md:hidden">
-          {links.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`whitespace-nowrap rounded-lg px-2 py-2 transition-colors ${
-                isActive(item.href)
-                  ? "bg-surface-soft text-foreground"
-                  : "text-muted hover:text-foreground"
-              }`}
-              aria-current={isActive(item.href) ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
       </Container>
     </header>
   );

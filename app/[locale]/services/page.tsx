@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Bot, LayoutTemplate, Package, Palette, Workflow } from "lucide-react";
 
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -30,6 +31,7 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
   }
 
   const dictionary = getDictionary(locale as Locale);
+  const serviceIcons = [LayoutTemplate, Palette, Bot, Package] as const;
 
   return (
     <>
@@ -42,9 +44,14 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
           <p className="mt-3 max-w-2xl text-sm text-muted">{dictionary.services.photosNote}</p>
         </Reveal>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {dictionary.services.list.map((service, index) => (
+          {dictionary.services.list.map((service, index) => {
+            const Icon = serviceIcons[index] ?? LayoutTemplate;
+            return (
             <Reveal key={service.title} delay={index * 0.08}>
               <Card className="h-full">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl border border-stroke/80 bg-accent/10 text-accent">
+                  <Icon className="h-5 w-5" aria-hidden />
+                </div>
                 <h2 className="font-[var(--font-display)] text-2xl">{service.title}</h2>
                 <p className="mt-3 text-sm text-muted">{service.description}</p>
                 <ul className="mt-5 space-y-2 text-sm text-foreground/90">
@@ -57,13 +64,17 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
                 </ul>
               </Card>
             </Reveal>
-          ))}
+            );
+          })}
         </div>
       </Section>
 
       <Section className="bg-surface/60">
         <Reveal>
           <div className="glass-panel rounded-3xl border border-stroke/60 p-8 md:p-12">
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-stroke/80 bg-accent/10 text-accent">
+              <Workflow className="h-6 w-6" aria-hidden />
+            </div>
             <h2 className="font-[var(--font-display)] text-3xl">
               {dictionary.services.workflowTitle}
             </h2>
