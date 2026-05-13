@@ -356,7 +356,7 @@ const en: Dictionary = {
     plans: [
       {
         service: "Strategic Website Design",
-        from: "from €800",
+        from: "from €999",
         description:
           "For premium presentation websites with messaging, UI system, and technical SEO-ready delivery.",
         includes: [
@@ -366,8 +366,8 @@ const en: Dictionary = {
         ],
       },
       {
-        service: "Brand Identity Systems",
-        from: "from €600",
+        service: "Brand Identity System",
+        from: "from €799",
         description:
           "For founders and teams that need a cohesive identity across web and marketing channels.",
         includes: [
@@ -378,7 +378,7 @@ const en: Dictionary = {
       },
       {
         service: "AI-Powered Automations",
-        from: "from €600",
+        from: "from €1,199",
         description:
           "For small teams replacing manual repetitive tasks with practical automation flows.",
         includes: [
@@ -389,7 +389,7 @@ const en: Dictionary = {
       },
       {
         service: "Physical Product Branding",
-        from: "from €400",
+        from: "from €799",
         description:
           "For labels, packaging systems, and shelf-ready visual consistency across product lines.",
         includes: [
@@ -703,7 +703,7 @@ const ro: Dictionary = {
     plans: [
       {
         service: "Web Design Strategic",
-        from: "de la €800",
+        from: "de la €999",
         description:
           "Pentru website-uri de prezentare premium, cu ierarhie de mesaj, UI sistemic și fundație SEO tehnică.",
         includes: [
@@ -713,8 +713,8 @@ const ro: Dictionary = {
         ],
       },
       {
-        service: "Sisteme de Identitate Vizuala",
-        from: "de la €600",
+        service: "Sistem de Identitate Vizuală",
+        from: "de la €799",
         description:
           "Pentru business-uri care au nevoie de o identitate coerentă pe web, social media și materiale.",
         includes: [
@@ -725,7 +725,7 @@ const ro: Dictionary = {
       },
       {
         service: "Automatizări cu AI",
-        from: "de la €600",
+        from: "de la €1199",
         description:
           "Pentru echipe mici care vor să înlocuiască munca manuală repetitivă cu fluxuri automate.",
         includes: [
@@ -736,7 +736,7 @@ const ro: Dictionary = {
       },
       {
         service: "Branding pentru Produse Fizice",
-        from: "de la €400",
+        from: "de la €799",
         description:
           "Pentru etichete, ambalaje și coerență vizuală la raft, pe game de produse.",
         includes: [
