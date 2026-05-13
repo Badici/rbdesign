@@ -42,9 +42,9 @@ const SunGlyph = ({ className }: { className?: string }) => (
 const MoonGlyph = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden>
     <path
-      d="M20.5 15.2A8.2 8.2 0 1 1 8.8 3.5 6.6 6.6 0 0 0 20.5 15.2Z"
+      d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z"
       stroke="currentColor"
-      strokeWidth="1.6"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -69,21 +69,27 @@ export const ThemeToggle = ({
   const nextLabel = isDark ? lightLabel : darkLabel;
   const mounted = typeof document !== "undefined";
 
+  const darkButtonSurface =
+    surfaceClassName.trim() || "border-stroke bg-surface hover:bg-surface-soft";
+
   return (
     <button
       type="button"
       onClick={toggleTheme}
       aria-label={`${label}: ${nextLabel}`}
       aria-pressed={!isDark}
-      className={`relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-stroke bg-surface transition-colors hover:bg-surface-soft ${surfaceClassName}`.trim()}
+      className={`relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border transition-colors ${
+        isDark
+          ? darkButtonSurface
+          : "border-violet-950/70 bg-violet-950/78 hover:bg-violet-950/88"
+      }`.trim()}
     >
       <span className="sr-only">{nextLabel}</span>
       {mounted ? (
         <motion.div
           className="pointer-events-none absolute inset-0 rounded-xl opacity-40"
           aria-hidden
-          animate={{ rotate: isDark ? 0 : 180 }}
-          transition={{ type: "spring", stiffness: 90, damping: 12 }}
+          animate={{ rotate: 0 }}
         >
           <motion.div
             className="absolute inset-[-40%] rounded-full bg-[conic-gradient(from_0deg,transparent,rgba(139,92,246,0.35),transparent,rgba(251,191,36,0.25),transparent)]"
@@ -95,10 +101,7 @@ export const ThemeToggle = ({
       <motion.div
         className="relative z-[1] flex h-full w-full items-center justify-center"
         initial={false}
-        animate={{
-          rotate: isDark ? 0 : 180,
-        }}
-        transition={{ type: "spring", stiffness: 220, damping: 18 }}
+        animate={{ rotate: 0 }}
       >
         <motion.div
           className="absolute flex items-center justify-center text-amber-400"
@@ -118,21 +121,16 @@ export const ThemeToggle = ({
           </motion.div>
         </motion.div>
         <motion.div
-          className="absolute flex items-center justify-center text-indigo-200"
+          className="absolute flex items-center justify-center text-violet-100/90"
           animate={{
             y: isDark ? 40 : 0,
             opacity: isDark ? 0 : 1,
             scale: isDark ? 0.45 : 1,
-            rotate: isDark ? 45 : 0,
+            rotate: 0,
           }}
           transition={{ type: "spring", stiffness: 280, damping: 22 }}
         >
-          <motion.div
-            animate={{ rotate: isDark ? -18 : 0 }}
-            transition={{ type: "spring", stiffness: 160, damping: 16 }}
-          >
-            <MoonGlyph className="h-6 w-6" />
-          </motion.div>
+          <MoonGlyph className="h-6 w-6" />
         </motion.div>
       </motion.div>
       <motion.span
@@ -142,7 +140,7 @@ export const ThemeToggle = ({
         animate={{
           boxShadow: isDark
             ? "inset 0 0 0 0 rgba(251,191,36,0)"
-            : "inset 0 0 20px 2px rgba(251,191,36,0.15)",
+            : "inset 0 0 18px 2px rgba(255,255,255,0.14)",
         }}
         transition={{ duration: 0.5 }}
       />
