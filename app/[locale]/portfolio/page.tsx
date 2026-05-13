@@ -73,14 +73,14 @@ export default async function PortfolioPage({ params }: PortfolioPageProps) {
                     alt={`${item.name} desktop showcase preview`}
                     width={1280}
                     height={800}
-                    className="h-auto w-full object-cover"
+                    className="h-auto w-full rounded-lg object-cover"
                   />
                   <Image
                     src={assets.mobile}
                     alt={`${item.name} mobile showcase preview`}
                     width={430}
                     height={932}
-                    className="h-full max-h-[260px] w-full rounded-xl border border-stroke/60 object-cover md:max-h-full"
+                    className="h-full max-h-[260px] w-full rounded-lg border border-stroke/60 object-cover md:max-h-full"
                   />
                 </div>
                 <article>

@@ -2,19 +2,19 @@ import type { PortfolioSlug } from "@/lib/case-studies";
 
 export const showcaseAssets: Record<PortfolioSlug, { desktop: string; mobile: string }> = {
   "lyra-baits": {
-    desktop: "/showcase/placeholder-lyra-desktop.svg",
-    mobile: "/showcase/placeholder-lyra-mobile.svg",
+    desktop: "/showcase/mockups-desktop/lyra-desktop.png",
+    mobile: "/showcase/mockups-mobile/lyra-mobile.png",
   },
   "plumbi-si-momitoare": {
-    desktop: "/showcase/placeholder-plumbi-desktop.svg",
-    mobile: "/showcase/placeholder-plumbi-mobile.svg",
+    desktop: "/showcase/mockups-desktop/plumbi-si-momitoare-desktop.png",
+    mobile: "/showcase/mockups-mobile/plumbi-si-momitoare-mobile.png",
   },
   emeye: {
-    desktop: "/showcase/placeholder-emeye-desktop.svg",
-    mobile: "/showcase/placeholder-emeye-mobile.svg",
+    desktop: "/showcase/mockups-desktop/emeye-desktop.png",
+    mobile: "/showcase/mockups-mobile/emeye-mobile.png",
   },
   "optim-contab": {
-    desktop: "/showcase/placeholder-optim-desktop.svg",
-    mobile: "/showcase/placeholder-optim-mobile.svg",
+    desktop: "/showcase/mockups-desktop/optim-contab-desktop.png",
+    mobile: "/showcase/mockups-mobile/optim-contab-mobile.png",
   },
 };

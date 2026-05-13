@@ -75,7 +75,7 @@ export default async function PortfolioCaseStudyPage({ params }: CaseStudyPagePr
                 alt={`${teaser.name} desktop preview`}
                 width={1280}
                 height={800}
-                className="h-auto w-full rounded-2xl object-cover"
+                className="h-auto w-full rounded-xl object-cover"
                 priority
               />
               <Image
@@ -83,7 +83,7 @@ export default async function PortfolioCaseStudyPage({ params }: CaseStudyPagePr
                 alt={`${teaser.name} mobile preview`}
                 width={430}
                 height={932}
-                className="mx-auto h-full max-h-[280px] w-auto rounded-2xl border border-stroke/60 object-cover md:max-h-[420px]"
+                className="mx-auto h-full max-h-[280px] w-auto rounded-xl border border-stroke/60 object-cover md:max-h-[420px]"
               />
             </div>
           </div>
