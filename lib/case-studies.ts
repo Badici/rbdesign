@@ -26,65 +26,65 @@ const caseStudies: Record<PortfolioSlug, Record<Locale, CaseStudyDoc>> = {
     en: {
       metaTitle: "Lyra Baits — Case Study",
       metaDescription:
-        "How RB Design Studios shaped product storytelling, hierarchy, and a premium eCommerce experience for Lyra Baits.",
-      eyebrow: "Fishing · eCommerce",
+        "Brand identity, packaging, and eCommerce for an up-and-coming fishing bait company: premium experience across digital, social, and physical products.",
+      eyebrow: "Fishing · brand & eCommerce",
       intro:
-        "Lyra Baits needed a digital experience that matched the precision of its products: fast scanning, confident storytelling, and a premium feel that converts first-time buyers.",
+        "Lyra Baits is a young fishing bait and accessories brand with a strong quality-to-price offer. The goal was to align the website with their social presence and deliver a premium feel online and on the shelf—without losing the practical mindset of real anglers.",
       sections: [
         {
-          title: "Positioning & narrative",
-          body: "We reframed technical product strengths into clear benefit-led messaging, so shoppers understand why the product wins before they reach the cart.",
+          title: "Digital & social in sync",
+          body: "We shaped an online identity that reads as one system with their social channels, so the brand feels consistent the moment someone moves from a post to the shop.",
         },
         {
-          title: "UX & catalog structure",
-          body: "We simplified category paths and tightened product card density, prioritizing scan speed on mobile while keeping depth for power users on desktop.",
+          title: "Identity, logo, and physical branding",
+          body: "From logo and core branding through packaging and physical touchpoints, the direction stays fisherman-first: legible, rugged, and trustworthy—while still looking modern and high-end.",
         },
         {
-          title: "Visual system",
-          body: "We built a cohesive UI language with stronger contrast, disciplined typography rhythm, and modular components that scale across seasonal launches.",
+          title: "Photography & shop content",
+          body: "We produced the product photography and structured web shop content so ranges, materials, and use cases are easy to scan and buy with confidence.",
         },
         {
-          title: "Outcome focus",
-          body: "The experience is designed to reduce hesitation: clearer proof, cleaner hierarchy, and a calmer purchase journey end-to-end.",
+          title: "Premium where it counts",
+          body: "The outcome is a coherent premium experience: the value positioning stays honest, but every digital and physical encounter feels intentional and brand-grade.",
         },
       ],
       deliverables: [
-        "Information architecture refresh",
-        "Responsive UI system + component patterns",
-        "Product storytelling templates",
-        "Performance-minded layout structure",
+        "Logo and online brand identity",
+        "Packaging and physical product branding",
+        "Product photography",
+        "Web shop content and presentation",
       ],
     },
     ro: {
       metaTitle: "Lyra Baits — Studiu de caz",
       metaDescription:
-        "Cum RB Design Studios a structurat storytelling-ul produsului, ierarhia vizuală și experiența premium de eCommerce pentru Lyra Baits.",
-      eyebrow: "Pescuit · eCommerce",
+        "Identitate vizuală, packaging și eCommerce pentru un brand tânăr de nade și accesorii: experiență premium online, pe social și pe produsul fizic.",
+      eyebrow: "Pescuit · brand & eCommerce",
       intro:
-        "Lyra Baits avea nevoie de o experiență digitală la nivelul produselor: scanare rapidă, mesaj clar și un feel premium care convertește și cumpărătorii noi.",
+        "Lyra Baits este un brand în creștere de nade și accesorii pentru pescuit, cu un raport calitate–preț foarte bun. Am fost cooptați pentru un site aliniat cu prezența pe social și pentru o experiență premium atât online, cât și pe produsele fizice—fără să pierdem sensul practic pentru pescari.",
       sections: [
         {
-          title: "Poziționare și narațiune",
-          body: "Am transpus avantajele tehnice în beneficii clare, astfel încât utilizatorul înțelege de ce produsul câștigă înainte să ajungă la coș.",
+          title: "Digital și social pe aceeași linie",
+          body: "Am construit o identitate online care se leagă firesc de canalurile sociale, astfel încât utilizatorul simte același brand când trece de la feed la magazin.",
         },
         {
-          title: "UX și structură catalog",
-          body: "Am simplificat traseele pe categorii și am redus densitatea vizuală pe carduri, cu focus pe viteza de scanare pe mobil.",
+          title: "Identitate, logo și branding fizic",
+          body: "De la logo și axul de branding până la ambalaje și aplicări fizice, direcția rămâne gândită pentru pescar: clară, solidă și de încredere—în același timp modernă și premium.",
         },
         {
-          title: "Sistem vizual",
-          body: "Am definit un limbaj UI coerent: contrast mai bun, ritm tipografic disciplinat și componente modulare pentru lansări sezoniere.",
+          title: "Foto produs și conținut magazin",
+          body: "Am realizat fotografia de produs și am structurat conținutul în magazinul online pentru game, materiale și contexte de folosire ușor de parcurs și de cumpărat.",
         },
         {
-          title: "Focus pe rezultat",
-          body: "Experiența este gândită să reducă ezitarea: dovezi mai clare, ierarhie curată și un parcurs de achiziție mai calm.",
+          title: "Premium acolo unde contează",
+          body: "Rezultatul este o experiență unitară și premium: oferta economică rămâne credibilă, iar orice întâlnire digitală sau fizică cu brandul pare îngrijită și coerentă.",
         },
       ],
       deliverables: [
-        "Refresh arhitectură informație",
-        "Sistem UI responsive + pattern-uri",
-        "Template-uri storytelling produs",
-        "Structură layout orientată spre performanță",
+        "Logo și identitate online",
+        "Branding fizic și packaging",
+        "Fotografie de produs",
+        "Conținut și prezentare pentru web shop",
       ],
     },
   },
@@ -92,65 +92,65 @@ const caseStudies: Record<PortfolioSlug, Record<Locale, CaseStudyDoc>> = {
     en: {
       metaTitle: "Plumbi și Momitoare — Case Study",
       metaDescription:
-        "RB Design Studios case study: catalog UX, mobile-first browsing, and practical buying flows for a high-variety fishing retailer.",
-      eyebrow: "Retail · high SKU count",
+        "Building a full visual identity from scratch for an established fishing brand: logo, photography, palette, branding, social guidance—and a measurable uplift in sales.",
+      eyebrow: "Fishing retail · rebranding",
       intro:
-        "With a large inventory, the challenge was clarity at speed: users needed to compare variants quickly without feeling overwhelmed.",
+        "Plumbi și Momitoare is a long-standing name in fishing weights and accessories but arrived with almost no cohesive online identity. We treated it as a clean-sheet branding project: visuals, rhythm, and language that finally match how solid the business already is offline.",
       sections: [
         {
-          title: "Catalog mental model",
-          body: "We reorganized entry points so shoppers land on the right category faster, with consistent naming and predictable filters.",
+          title: "From invisible to unmistakable",
+          body: "We defined a complete visual territory—logo lockups, typography logic, colour system, and application rules—so the brand reads as intentional everywhere it appears.",
         },
         {
-          title: "Mobile-first density",
-          body: "We tuned spacing, metadata visibility, and tap targets so the same catalog feels lighter on small screens without losing information.",
+          title: "Product photography & shelf presence",
+          body: "We planned and executed product imagery that communicates fit, finish, and range clarity, supporting both eCommerce grids and catalogue-style browsing.",
         },
         {
-          title: "Decision support",
-          body: "We emphasized the attributes that matter at purchase time, reducing back-and-forth between product list and detail views.",
+          title: "Brand voice on social",
+          body: "Alongside visuals, we gave practical guidance on how to carry the refreshed identity across social platforms so traction online compounds instead of drifting off-brand.",
         },
         {
-          title: "Scalable UI patterns",
-          body: "We delivered repeatable card and list patterns that keep the store coherent as inventory grows.",
+          title: "Momentum in numbers",
+          body: "The refresh landed quickly: stronger recognition and sharper presentation contributed to roughly a fifteen percent uplift in sales in the first month after rollout.",
         },
       ],
       deliverables: [
-        "Category pathway improvements",
-        "Product card + list UI patterns",
-        "Mobile-first interaction tuning",
-        "Variant readability improvements",
+        "Logo and full visual identity system",
+        "Product photography and colour direction",
+        "Brand application and social media guidance",
+        "Cohesive digital retail presentation",
       ],
     },
     ro: {
       metaTitle: "Plumbi și Momitoare — Studiu de caz",
       metaDescription:
-        "Studiu de caz RB Design Studios: UX catalog, browsing mobile-first și fluxuri practice pentru un retailer cu multe SKU-uri.",
-      eyebrow: "Retail · catalog extins",
+        "Identitate vizuală de la zero pentru un brand consacrat de accesorii pescuit: logo, fotografie, culori, branding și suport social—cu creștere măsurabilă a vânzărilor.",
+      eyebrow: "Retail pescuit · rebranding",
       intro:
-        "Cu un inventar mare, provocarea a fost claritatea la viteză: utilizatorii trebuie să compare variante rapid, fără senzația de aglomerare.",
+        "Plumbi și Momitoare este un nume cu vechime pe piața plumbilor și accesorii, dar fără o identitate online coerentă. Am tratat proiectul ca pe un branding de la zero: vizual, ritm și limbaj care reflectă în sfârșit soliditatea businessului din offline.",
       sections: [
         {
-          title: "Model mental catalog",
-          body: "Am reorganizat punctele de intrare astfel încât utilizatorii ajung mai repede în categoria potrivită, cu denumiri consistente și filtre previzibile.",
+          title: "De la neclar la recunoscut",
+          body: "Am definit un teritoriu vizual complet—logo, logică tipografică, schemă de culoare și reguli de aplicare—astfel încât brandul să pară intenționat oriunde apare.",
         },
         {
-          title: "Densitate mobile-first",
-          body: "Am ajustat spațierea, vizibilitatea metadatelor și țintele de atingere ca același catalog să pară mai ușor pe ecrane mici.",
+          title: "Fotografie produs și prezență la raft",
+          body: "Am planificat și realizat imagini de produs care comunică finisaj, gamă și claritate, atât pentru grid-uri eCommerce, cât și pentru navigare tip catalog.",
         },
         {
-          title: "Suport decizie",
-          body: "Am pus în față atributele relevante la momentul cumpărării, reducând navigarea inutilă între listă și detaliu.",
+          title: "Vocea brandului pe social",
+          body: "Pe lângă vizual, am oferit îndrumare practică pentru cum se poartă identitatea reîmprospătată pe rețele, ca prezența online să se acumuleze, nu să se dilueze.",
         },
         {
-          title: "Pattern-uri scalabile",
-          body: "Am livrat pattern-uri repetabile pentru carduri și liste, astfel încât magazinul rămâne coerent pe măsură ce crește inventarul.",
+          title: "Impuls măsurabil",
+          body: "Refresh-ul s-a simțit rapid: recunoaștere mai bună și prezentare mai clară au contribuit la o creștere de circa 15% a vânzărilor în prima lună după lansare.",
         },
       ],
       deliverables: [
-        "Îmbunătățiri trasee categorii",
-        "Pattern-uri UI listă + card produs",
-        "Tuning interacțiuni mobile-first",
-        "Lizibilitate îmbunătățită pentru variante",
+        "Logo și sistem complet de identitate vizuală",
+        "Fotografie produs și direcție cromatică",
+        "Aplicare brand și consultanță social media",
+        "Prezentare coerentă în retail digital",
       ],
     },
   },
@@ -158,65 +158,65 @@ const caseStudies: Record<PortfolioSlug, Record<Locale, CaseStudyDoc>> = {
     en: {
       metaTitle: "Emeye — Case Study",
       metaDescription:
-        "A cinematic videography portfolio case study: premium positioning, portfolio-first UX, and a confident inquiry path.",
-      eyebrow: "Videography · portfolio",
+        "An artistic videography portfolio built inside strict brand guidelines—with event booking and a breadth of work from weddings to music videos.",
+      eyebrow: "Videography · portfolio & booking",
       intro:
-        "Emeye needed a site that feels as intentional as the work it showcases: bold visuals, restrained layout, and a frictionless route to inquiries.",
+        "Emeye sits in a disciplined brand world: fixed palette, logo rules, and identity guardrails set by the client. Within that frame we pushed a more artistic site experience—a portfolio that feels cinematic while staying unmistakably on-brand—and wired in practical tooling for enquiries and event booking.",
       sections: [
         {
-          title: "Portfolio-first storytelling",
-          body: "We structured the narrative around proof: work samples lead, while supporting copy reinforces craft and reliability.",
+          title: "Creativity within constraints",
+          body: "We treated guidelines as creative fuel: typography, spacing, and motion obey the manual, while layout and pacing still feel expressive and editorial.",
         },
         {
-          title: "Premium visual pacing",
-          body: "We used rhythm, contrast, and whitespace to create a cinematic feel without noisy effects that distract from the reel.",
+          title: "Range without chaos",
+          body: "The work spans weddings through music videos and commercial pieces. The structure makes that variety legible: each genre gets room to breathe without blurring into noise.",
         },
         {
-          title: "Conversion clarity",
-          body: "We designed a clear inquiry path with strong CTAs and trust cues that match a high-end creative service.",
+          title: "Booking-ready experience",
+          body: "Beyond showcase, the build supports event booking flows so interested clients can move from inspiration to a concrete next step without friction.",
         },
         {
-          title: "Brand consistency",
-          body: "Typography, spacing, and accent usage align across sections so the brand reads cohesive on every scroll depth.",
+          title: "Portfolio as proof",
+          body: "The outcome is a site that reads as craft-first and business-capable—a reel-forward presence that respects the client's visual law and scales with their shoot calendar.",
         },
       ],
       deliverables: [
-        "Portfolio layout system",
-        "CTA + inquiry flow refinement",
-        "Typography + spacing rhythm",
-        "Responsive showcase patterns",
+        "Portfolio UX within strict brand guidelines",
+        "Layouts for diverse videography genres",
+        "Event-booking oriented features",
+        "Responsive cinematic presentation patterns",
       ],
     },
     ro: {
       metaTitle: "Emeye — Studiu de caz",
       metaDescription:
-        "Studiu de caz pentru un portofoliu de videografie cinematic: poziționare premium, UX portfolio-first și traseu clar spre contact.",
-      eyebrow: "Videografie · portofoliu",
+        "Portofoliu de videografie cu abordare artistică, ghidată de reguli stricte de brand—și funcții pentru rezervări evenimente, de la nunți la videoclipuri.",
+      eyebrow: "Videografie · portofoliu & booking",
       intro:
-        "Emeye avea nevoie de un site la fel de intenționat ca lucrările pe care le prezintă: vizual îndrăzneț, layout disciplinat și un drum fără fricțiune spre solicitări.",
+        "Emeye funcționează într-un cadru de brand foarte disciplinat: paletă, logo și reguli de identitate stabilite de client. În limitele acestea am construit o experiență de site mai artistică—un portofoliu cinematic, dar recunoscut ca fiind pe brand—plus funcționalități practice pentru solicitări și rezervări de evenimente.",
       sections: [
         {
-          title: "Storytelling portfolio-first",
-          body: "Am structurat narațiunea în jurul dovezii: mostrele de lucru conduc, iar copy-ul susține meșteșugul și seriozitatea.",
+          title: "Creativitate în limite clare",
+          body: "Am tratat ghidul de brand ca pe un motor creativ: tipografie, spațiere și mișcare respectă manualul, iar layout-ul și ritmul rămân expresive, aproape editoriale.",
         },
         {
-          title: "Ritm vizual premium",
-          body: "Am folosit ritm, contrast și spațiu negativ pentru un feel cinematic, fără efecte zgomotoase care distrag de la reel.",
+          title: "Varietate fără haos",
+          body: "Lucrările merg de la nunți la videoclipuri și proiecte comerciale. Structura face varietatea lizibilă: fiecare tip de conținut are spațiu propriu, fără zgomot vizual.",
         },
         {
-          title: "Claritate conversie",
-          body: "Am definit un traseu clar spre solicitare, cu CTA-uri puternice și semnale de încredere potrivite unui serviciu creativ high-end.",
+          title: "Experiență gândită pentru booking",
+          body: "Dincolo de showcase, site-ul susține fluxuri de rezervare pentru evenimente, astfel încât clientul să treacă de la inspirație la un pas concret, fără fricțiune.",
         },
         {
-          title: "Coerență de brand",
-          body: "Tipografia, spațierea și accentele se aliniază pe secțiuni, astfel încât brandul rămâne coerent la orice adâncime de scroll.",
+          title: "Portofoliu ca dovadă",
+          body: "Rezultatul este un site care comunică meșteșugul și seriozitatea operațională—un portofoliu centrat pe lucrări, respectă legea vizuală a clientului și ține pasul cu calendarul de filmări.",
         },
       ],
       deliverables: [
-        "Sistem layout portofoliu",
-        "Rafinare flux CTA + contact",
-        "Ritm tipografie + spațiere",
-        "Pattern-uri responsive showcase",
+        "UX portofoliu în limite stricte de brand",
+        "Layout-uri pentru genuri diverse de videografie",
+        "Funcționalități orientate spre rezervări evenimente",
+        "Pattern-uri responsive cu prezentare cinematică",
       ],
     },
   },
@@ -224,65 +224,65 @@ const caseStudies: Record<PortfolioSlug, Record<Locale, CaseStudyDoc>> = {
     en: {
       metaTitle: "Optim Contab — Case Study",
       metaDescription:
-        "How RB Design Studios clarified advisory positioning, service packaging, and trust hierarchy for an accounting firm website.",
-      eyebrow: "Accounting · advisory",
+        "First web presence for a traditional accounting firm: new logo, online identity, and a presentation site that explains value to existing and new clients.",
+      eyebrow: "Accounting · first website",
       intro:
-        "Optim Contab needed to escape the generic accounting-site look and communicate strategic value quickly to SME decision makers.",
+        "Optim Contab is an established, traditionally run accounting practice that had not yet claimed a clear space online. We helped them step into the open with their first presentation website—plus a fresh logo and digital identity—so they can be visible, credible, and explicit about what they deliver for clients.",
       sections: [
         {
-          title: "Value-led messaging",
-          body: "We reframed services around outcomes and responsibilities, not feature lists, so prospects understand the partnership model.",
+          title: "From offline-only to findable",
+          body: "The priority was a professional first impression on the web: structure, tone, and visuals that feel trustworthy to SMEs without chasing trends for their own sake.",
         },
         {
-          title: "Service packaging clarity",
-          body: "We introduced structured bundles and scannable sections that reduce ambiguity about what is included and what happens next.",
+          title: "Logo and online identity",
+          body: "We introduced a mark and visual system that translate the firm's stability into a modern, approachable digital language—consistent from header to contact blocks.",
         },
         {
-          title: "Trust hierarchy",
-          body: "We sequenced proof, credentials, and process cues to build confidence before asking for contact.",
+          title: "Clarity for clients",
+          body: "The site is built to answer the questions existing and prospective clients actually ask: what you do, how engagement works, and why the relationship matters—framed in plain, confident copy.",
         },
         {
-          title: "Premium perception",
-          body: "Visual discipline and spacing signal an advisory-grade firm rather than a commodity provider.",
+          title: "Public proof of the practice",
+          body: "The outcome is more than a brochure: it is a window for current clients to understand the full value on offer, and for new ones to take the first step with confidence.",
         },
       ],
       deliverables: [
-        "Messaging hierarchy refresh",
-        "Service bundle presentation patterns",
-        "Trust + proof sequencing",
-        "Responsive section system",
+        "Logo design",
+        "Online brand identity and UI direction",
+        "First presentation website — structure and content support",
+        "Client-facing explanation of services and positioning",
       ],
     },
     ro: {
       metaTitle: "Optim Contab — Studiu de caz",
       metaDescription:
-        "Cum RB Design Studios a clarificat poziționarea consultativă, pachetele de servicii și ierarhia de încredere pentru site-ul unei firme de contabilitate.",
-      eyebrow: "Contabilitate · consultanță",
+        "Prima prezență online pentru o firmă de contabilitate tradițională: logo, identitate digitală și site de prezentare care explică valoarea pentru clienți.",
+      eyebrow: "Contabilitate · primul site",
       intro:
-        "Optim Contab trebuia să iasă din estetica generică a site-urilor de contabilitate și să comunice rapid valoarea strategică pentru decidenți IMM.",
+        "Optim Contab este o practică de contabilitate consolidată, cu mod de lucru clasic, care nu avea încă o prezență web clar definită. Am ajutat-o să intre „în lumina reflectoarelor” cu primul site de prezentare—împreună cu un logo nou și o identitate online—ca să fie vizibilă, credibilă și explicită despre ce livrează pentru clienți.",
       sections: [
         {
-          title: "Mesaj orientat pe valoare",
-          body: "Am reîncadrat serviciile în jurul rezultatelor și responsabilităților, nu al listelor de features, pentru a clarifica modelul de parteneriat.",
+          title: "De la doar offline la găsibil",
+          body: "Prioritatea a fost o primă impresie profesionistă pe web: structură, ton și vizual care inspiră încredere pentru IMM-uri, fără trenduri de decor.",
         },
         {
-          title: "Claritate pachete servicii",
-          body: "Am introdus structuri de pachete și secțiuni scanabile care reduc ambiguitatea despre ce este inclus și ce urmează.",
+          title: "Logo și identitate online",
+          body: "Am introdus un semn vizual și un sistem care traduc stabilitatea firmei într-un limbaj digital modern și accesibil—coerent de la antet la zonele de contact.",
         },
         {
-          title: "Ierarhie încredere",
-          body: "Am secvențiat dovezi, credențiale și indicii de proces ca să construim încredere înainte de solicitarea contactului.",
+          title: "Claritate pentru client",
+          body: "Site-ul răspunde întrebărilor reale ale clienților actuali și potențiali: ce faceți, cum colaborați și de ce contează relația—exprimat direct și cu încredere.",
         },
         {
-          title: "Percepție premium",
-          body: "Disciplina vizuală și spațierea semnalează o firmă de tip consultativ, nu un furnizor comodificat.",
+          title: "Dovadă publică a practicii",
+          body: "Rezultatul nu e doar o broșură online: e o fereastră prin care clienții existenți înțeleg spectrul complet de valoare, iar cei noi pot face primul pas fără ezitare.",
         },
       ],
       deliverables: [
-        "Refresh ierarhie mesaj",
-        "Pattern-uri prezentare pachete",
-        "Secvențiere dovezi + încredere",
-        "Sistem secțiuni responsive",
+        "Design logo",
+        "Identitate brand online și direcție UI",
+        "Prim site de prezentare — structură și suport conținut",
+        "Explicarea serviciilor și poziționării pentru client",
       ],
     },
   },

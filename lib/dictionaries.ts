@@ -297,53 +297,57 @@ const en: Dictionary = {
         slug: "lyra-baits",
         name: "Lyra Baits",
         url: "https://lyrabaits.ro",
-        industry: "Fishing products / eCommerce",
-        positioning: "Premium bait brand with performance-first product storytelling.",
+        industry: "Fishing bait & accessories / eCommerce",
+        positioning:
+          "Premium-feel brand and packaging with an honest quality-to-price proposition for anglers.",
         challenge:
-          "Translate technical product advantages into a cleaner and more aspirational shopping journey.",
+          "Match the growing social presence with a proper site while keeping Fisherman-first practicality—premium online and on the shelf, without looking generic.",
         solution:
-          "Built a modular product presentation framework with stronger hierarchy, contrast, and faster product scanning.",
+          "Online identity, logo, branding, physical branding and packaging, product photography, and structured web shop content aligned across digital and retail touchpoints.",
         impact:
-          "Sharper product clarity and stronger confidence signals for new buyers.",
+          "A cohesive premium journey from social posts to unpackaging: modern, credible, and built around real fishermens needs.",
       },
       {
         slug: "plumbi-si-momitoare",
         name: "Plumbi si Momitoare",
         url: "https://plumbisimomitoare.ro",
-        industry: "Fishing gear retailer",
-        positioning: "High-variety catalog focused on speed and practical buying decisions.",
+        industry: "Fishing tackle (weights & accessories)",
+        positioning:
+          "Established retailer stepping into a full visual identity and digital presence for the first time.",
         challenge:
-          "Organize dense inventory into a mobile-friendly journey without overwhelming users.",
+          "A trusted offline business with no unified online look—needed logo, imagery, colour, and brand system from zero.",
         solution:
-          "Reframed category pathways, simplified card structure, and emphasized quick-hit product metadata.",
+          "Visual identity from scratch: logo, product photography, colour schemes, branding, and hands-on social media guidance.",
         impact:
-          "Improved browse efficiency and lower decision friction on smaller screens.",
+          "Stronger recognition and clearer presentation helped drive roughly 15% higher sales in the first month after launch.",
       },
       {
         slug: "emeye",
         name: "Emeye",
         url: "https://emeye.ro",
-        industry: "Videography / visual storytelling",
-        positioning: "Cinematic videography brand focused on premium visual identity.",
+        industry: "Videography & event production",
+        positioning:
+          "Artistic portfolio site inside strict client brand rules—with booking tools and room for every genre.",
         challenge:
-          "Showcase creative range while keeping the site clean and conversion-oriented.",
+          "Respect tight logo, colour, and identity guidelines while still feeling expressive and cinematic across a wide range of work.",
         solution:
-          "Built a portfolio-first narrative structure with high-impact sections and clear inquiry flow.",
+          "More artistic layouts and pacing within the manual, plus event-booking features and structures that showcase weddings through music videos without visual chaos.",
         impact:
-          "Stronger premium positioning and clearer project inquiry path.",
+          "A portfolio that reads as both on-brand and creative—and that turns interest into booked projects.",
       },
       {
         slug: "optim-contab",
         name: "Optim Contab",
         url: "https://optimcontab.ro",
-        industry: "Accounting and business advisory",
-        positioning: "Reliable financial partner for scaling SMEs.",
+        industry: "Accounting & business services",
+        positioning:
+          "Traditional practice going public online with its first presentation site and fresh visual identity.",
         challenge:
-          "Differentiate from generic accounting websites and communicate strategic value quickly.",
+          "Move a classic accounting firm from word-of-mouth only to a clear, trustworthy web presence that explains value to existing and new clients.",
         solution:
-          "Introduced value-oriented messaging blocks, service bundles, and social proof hierarchy.",
+          "New logo, online identity, and first presentation website focused on what the firm does and why it matters for SMEs.",
         impact:
-          "Clearer offer comprehension and a stronger premium advisory positioning.",
+          "Visible, professional positioning that helps current clients see the full scope of support and gives prospects confidence to reach out.",
       },
     ],
   },
@@ -644,53 +648,57 @@ const ro: Dictionary = {
         slug: "lyra-baits",
         name: "Lyra Baits",
         url: "https://lyrabaits.ro",
-        industry: "Produse pescuit / eCommerce",
-        positioning: "Brand premium de nade, cu focus pe performanța produsului.",
+        industry: "Nade și accesorii pescuit / eCommerce",
+        positioning:
+          "Brand și packaging cu senzație premium, păstrând un raport calitate–preț credibil pentru pescari.",
         challenge:
-          "Transformarea avantajelor tehnice ale produsului într-o experiență de shopping mai aspirațională.",
+          "Alinierea site-ului cu social media și o experiență premium online și pe produsul fizic, fără să pară generic sau „de vitrină”.",
         solution:
-          "Am construit un sistem modular de prezentare, cu ierarhie mai clară și scanare rapidă.",
+          "Identitate online, logo, branding, branding fizic și packaging, fotografie de produs și conținut structurat pentru magazinul online, coerent pe toate punctele de contact.",
         impact:
-          "Claritate mai mare în ofertă și încredere sporită pentru clienți noi.",
+          "Un parcurs unitar de la postări la ambalaj: modern, credibil și gândit pentru nevoile reale ale pescarului.",
       },
       {
         slug: "plumbi-si-momitoare",
         name: "Plumbi și Momitoare",
         url: "https://plumbisimomitoare.ro",
-        industry: "Retail echipamente pescuit",
-        positioning: "Catalog extins, focus pe achiziție rapidă și practică.",
+        industry: "Echipamente pescuit (plumbi și accesorii)",
+        positioning:
+          "Business consacrat care primește identitate vizuală și prezență digitală coerentă de la zero.",
         challenge:
-          "Organizarea unui volum mare de produse într-un flux mobil ușor de folosit.",
+          "Companie solidă în offline, fără unitate vizuală online—nevoie de logo, imagistică, culoare și sistem de brand construit de la început.",
         solution:
-          "Am simplificat traseele pe categorii și am scos în evidență metadatele esențiale.",
+          "Identitate vizuală completă: logo, fotografie produs, scheme de culoare, branding și consultanță practică pentru social media.",
         impact:
-          "Navigare mai eficientă și fricțiune redusă în decizia de cumpărare.",
+          "Recunoaștere mai bună și prezentare mai clară, cu o creștere de circa 15% a vânzărilor în prima lună după lansare.",
       },
       {
         slug: "emeye",
         name: "Emeye",
         url: "https://emeye.ro",
-        industry: "Videografie / storytelling vizual",
-        positioning: "Brand de videografie cinematic, orientat spre percepție premium.",
+        industry: "Videografie și producție evenimente",
+        positioning:
+          "Portofoliu artistic, în limite stricte de brand, cu booking și spațiu pentru toate tipurile de proiecte.",
         challenge:
-          "Prezentarea portofoliului creativ într-un format clar, fără să încarce experiența.",
+          "Respectarea strictă a logo-ului, culorilor și ghidului de identitate, fără să pierzi expresivitatea cinematică pe un spectru larg de lucrări.",
         solution:
-          "Am construit o structură portfolio-first, cu secțiuni de impact și traseu clar spre contact.",
+          "Abordare mai artistică a layout-ului și ritmului, în manualul de brand, plus funcții pentru rezervări evenimente și structuri care pun în valoare de la nunți la videoclipuri, fără zgomot vizual.",
         impact:
-          "Poziționare premium mai clară și mai multe intenții de contact relevante.",
+          "Un site coerent cu identitatea clientului, dar creativ—care traduce interesul în proiecte rezervate.",
       },
       {
         slug: "optim-contab",
         name: "Optim Contab",
         url: "https://optimcontab.ro",
-        industry: "Contabilitate și consultanță",
-        positioning: "Partener financiar de încredere pentru IMM-uri în creștere.",
+        industry: "Contabilitate și servicii pentru business",
+        positioning:
+          "Practică tradițională care devine vizibilă online cu primul site de prezentare și identitate vizuală nouă.",
         challenge:
-          "Diferențiere față de site-urile contabile standard și comunicare rapidă a valorii.",
+          "Trecerea de la recomandări și offline la o prezență web clară, care explică valoarea pentru clienți actuali și noi.",
         solution:
-          "Am introdus blocuri de valoare, pachete de servicii și ierarhie de social proof.",
+          "Logo nou, identitate online și prim site de prezentare axat pe ce face firma și cum susține IMM-urile.",
         impact:
-          "Înțelegere mai rapidă a ofertei și poziționare premium mai clară.",
+          "Poziționare publică și profesionistă: clienții existenți văd spectrul complet de servicii, iar prospecții pot face primul pas cu încredere.",
       },
     ],
   },
